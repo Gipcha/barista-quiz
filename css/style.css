@@ -1,0 +1,125 @@
+body {
+  background-image: url(/css/images/bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #422F28;
+  margin: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arsenal', sans-serif;
+  padding-bottom: 50px;
+}
+
+.quiz-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-direction: column;
+  background-color:#F8F3EF;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px #6f544a;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  color:#2D2F2A;
+}
+
+p {
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+#start-btn,
+#restart-btn,
+.answer-btn {
+  margin: 10px;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+#start-btn{
+  background-color: #f0e5d5;
+  transition: background-color 0.3s ease;
+  font-size: 17px;
+}
+
+#restart-btn{
+  background-color: #f0e5d5;
+  transition: background-color 0.3s ease;
+  font-size: 17px;
+  max-width: 400px; 
+}
+
+
+.answer-input,
+.answer-btn {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.answer-input {
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #ccc;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 15px; /* ровный отступ до кнопки */
+}
+
+.answer-btn {
+  padding: 15px 0;
+  background-color: #decdbf;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 17px;
+}
+.answer-btn:hover{
+  background-color:#f2e8db
+}
+
+.answer-btn.correct {
+  background-color: #D3D693;
+  color: white;
+}
+
+.answer-btn.incorrect {
+  background-color: #F9A28F;
+  color: white;
+}
+
+#question {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+#result {
+  font-size: 30px;
+  font-weight: 700;
+
+}
