@@ -1,48 +1,71 @@
-# Barista Quiz
+# ☕ Barista Quiz
 
-Интерактивный тест для аттестации бариста. Позволяет проверить знания о кофе, экстракции и работе бариста через вопросы с вариантами ответов и текстовые вопросы.
+Interactive coffee knowledge quiz built with Vanilla JavaScript.
 
----
+The application tests knowledge of coffee, extraction and barista fundamentals using multiple-choice and text-based questions.
 
-## Функционал
+## 🌐 Live Demo
 
-- **12 вопросов**: 8 с вариантами ответов и 2 текстовых.
-- **Проверка правильности ответов** с цветовой подсветкой: зеленый — верно, красный — неверно.
-- **Фидбэк для текстовых вопросов** — подсвечивает поле ввода.
-- **Подсчет очков** и отображение лучшего результата.
-- **Таймер** для ответов.
-- **Сохранение лучшего результата** в `localStorage` — результат сохраняется между сессиями.
+[View Live Demo](https://gipcha.github.io/barista-quiz/)
 
----
+## ✨ Features
 
-## Технологии
+- Multiple-choice and text-based questions
+- Answer validation with visual feedback
+- Score calculation
+- Best score tracking
+- Countdown timer for questions
+- Best result persistence using LocalStorage
+- Dynamic question rendering
+- Quiz restart functionality
 
-- **HTML** — семантическая разметка, структура теста.
-- **CSS** — Flexbox, стилизация карточки теста, кнопок, поля для ввода.
-- **JavaScript**:
-  - Работа с DOM: создание вопросов, кнопок и полей ввода.
-  - Обработка событий `click` для кнопок.
-  - Функции и циклы для рендера вопросов и логики теста.
-  - Работа с `localStorage` для сохранения лучшего результата.
-  - Таймер.
+## 🛠 Tech Stack
 
----
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- DOM API
+- LocalStorage
+- Git & GitHub
 
-## Как использовать
+## 📸 Preview
 
-1. Склонировать репозиторий:
-   ```bash
-   git clone https://github.com/Gipcha/barista-quiz.git
-   ```
-2. Открыть файл index.html в браузере.
-3. Начать тест кнопкой "Начать тест".
-4. После завершения теста можно увидеть результат и лучший результат, а также перезапустить тест.
+### Start Screen
 
-## Чему я научилась
+![Barista Quiz start screen](./css/images/assets/start-screen.png)
 
-- Создавать интерактивные элементы через DOM и управлять ими через JS.
-- Использовать события и обработчики для кнопок и input.
-- Стилизовать элементы с помощью CSS, Flexbox и карточек.
-- Сохранять данные между сессиями с помощью localStorage.
-- Реализовывать таймеры для тестов и отображать обратный отсчет.
-- Управлять состоянием приложения (score, текущий вопрос, фидбэк).
+### Multiple-Choice Question
+
+![Barista Quiz question](./css/images/assets/quiz-screen.png)
+
+### Text Input Question
+
+![Barista Quiz text input](./css/images/assets/input-screen.png)
+
+### Results
+
+![Barista Quiz results](./css/images/assets/results-screen.png)
+
+## ⚙️ Implementation
+
+The quiz logic is implemented with Vanilla JavaScript.
+
+Questions and answer controls are rendered dynamically using the DOM API. The application manages the current question, score and timer state, validates user answers and provides immediate visual feedback.
+
+The best result is stored in LocalStorage, allowing it to persist between browser sessions.
+
+## 🚀 Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Gipcha/barista-quiz.git
+```
+
+Open the project directory:
+
+```bash
+cd barista-quiz
+```
+
+Then open `index.html` in your browser.
