@@ -1,9 +1,9 @@
 body {
-  background-image: url(/css/images/bg.svg);
+  background-image: url("./images/bg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #422F28;
+  color: #422f28;
   margin: 0px;
   min-height: 100vh;
   display: flex;
@@ -11,17 +11,17 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
-  font-family: 'Arsenal', sans-serif;
+  font-family: "Arsenal", sans-serif;
   padding-bottom: 50px;
 }
 
-.quiz-container{
+.quiz-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   flex-direction: column;
-  background-color:#F8F3EF;
+  background-color: #f8f3ef;
   padding: 40px;
   width: 100%;
   max-width: 600px;
@@ -32,7 +32,7 @@ body {
 
 h1 {
   font-size: 45px;
-  color:#2D2F2A;
+  color: #2d2f2a;
 }
 
 p {
@@ -53,19 +53,18 @@ p {
   border-radius: 10px;
 }
 
-#start-btn{
+#start-btn {
   background-color: #f0e5d5;
   transition: background-color 0.3s ease;
   font-size: 17px;
 }
 
-#restart-btn{
+#restart-btn {
   background-color: #f0e5d5;
   transition: background-color 0.3s ease;
   font-size: 17px;
-  max-width: 400px; 
+  max-width: 400px;
 }
-
 
 .answer-input,
 .answer-btn {
@@ -79,7 +78,7 @@ p {
   padding: 15px;
   text-align: center;
   border: 2px solid #ccc;
-  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
   margin-bottom: 15px; /* ровный отступ до кнопки */
 }
 
@@ -91,17 +90,17 @@ p {
   transition: background-color 0.3s ease;
   font-size: 17px;
 }
-.answer-btn:hover{
-  background-color:#f2e8db
+.answer-btn:hover {
+  background-color: #f2e8db;
 }
 
 .answer-btn.correct {
-  background-color: #D3D693;
+  background-color: #d3d693;
   color: white;
 }
 
 .answer-btn.incorrect {
-  background-color: #F9A28F;
+  background-color: #f9a28f;
   color: white;
 }
 
@@ -121,5 +120,4 @@ p {
 #result {
   font-size: 30px;
   font-weight: 700;
-
 }
